@@ -80,30 +80,52 @@ export default function Home() {
         <div className="bg-white p-6 rounded-xl shadow">Top Brand Partners</div>
       </section>
 
-      {/* CALCULATOR */}
-      <section className="bg-white py-16">
-        <div className="max-w-xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            Calculate Your Solar Savings
-          </h2>
-          <input
-            type="number"
-            placeholder="Monthly Electricity Bill (₹)"
-            className="w-full border p-3 rounded"
-            onChange={(e) => {
-              const bill = Number(e.target.value || 0);
-              document.getElementById("saving").innerText =
-                bill ? `₹${Math.round(bill * 0.9)}` : "₹0";
-            }}
-          />
-          <p
-            id="saving"
-            className="mt-4 text-2xl font-bold text-sky-500"
-          >
-            ₹0
-          </p>
+      {/* SAVINGS CALCULATOR */}
+<section className="bg-white py-16">
+  <div className="max-w-4xl mx-auto px-6 text-center">
+    <h2 className="text-3xl font-bold mb-4">
+      Calculate Your Solar Savings
+    </h2>
+    <p className="text-slate-600 mb-8">
+      Enter your electricity bill to see how much you can save with solar
+    </p>
+
+    <div className="bg-slate-50 p-8 rounded-xl shadow max-w-xl mx-auto">
+      <input
+        type="number"
+        placeholder="Monthly Electricity Bill (₹)"
+        className="w-full border p-3 rounded mb-6"
+        onChange={(e) => {
+          const bill = Number(e.target.value || 0);
+          document.getElementById("monthly").innerText =
+            bill ? `₹${Math.round(bill * 0.9)}` : "—";
+          document.getElementById("yearly").innerText =
+            bill ? `₹${Math.round(bill * 0.9 * 12)}` : "—";
+        }}
+      />
+
+      <div className="grid grid-cols-2 gap-4 mb-6">
+        <div className="bg-white p-4 rounded shadow">
+          <p className="text-sm text-slate-500">Monthly Savings</p>
+          <p id="monthly" className="text-xl font-bold text-sky-500">—</p>
         </div>
-      </section>
+        <div className="bg-white p-4 rounded shadow">
+          <p className="text-sm text-slate-500">Yearly Savings</p>
+          <p id="yearly" className="text-xl font-bold text-sky-500">—</p>
+        </div>
+      </div>
+
+      <a
+        href="https://wa.me/917620209899"
+        target="_blank"
+        className="inline-block bg-sky-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-sky-600"
+      >
+        Get Free Solar Quote
+      </a>
+    </div>
+  </div>
+</section>
+
 
       {/* INSTALLATION */}
       <section className="bg-slate-100 py-16">

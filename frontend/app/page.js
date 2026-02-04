@@ -91,7 +91,64 @@ export default function Home() {
           <p>Brand Partners</p>
         </div>
       </section>
+{/* SAVINGS CALCULATOR */}
+<section className="bg-white py-16">
+  <div className="max-w-4xl mx-auto px-6 text-center">
+    <h2 className="text-3xl font-bold mb-4">
+      Calculate Your Solar Savings
+    </h2>
+    <p className="mb-10 text-slate-600">
+      See how much you can save every month by switching to rooftop solar
+    </p>
 
+    <div className="bg-slate-50 p-8 rounded-xl shadow max-w-xl mx-auto">
+      <label className="block text-left font-medium mb-2">
+        Your Monthly Electricity Bill (₹)
+      </label>
+
+      <input
+        id="bill"
+        type="number"
+        placeholder="Example: 3000"
+        className="w-full border rounded-lg p-3 mb-4"
+        onChange={(e) => {
+          const bill = Number(e.target.value);
+          const savings = Math.round(bill * 0.9);
+          const yearly = savings * 12;
+
+          document.getElementById("monthlySaving").innerText =
+            bill ? `₹${savings}` : "—";
+          document.getElementById("yearlySaving").innerText =
+            bill ? `₹${yearly}` : "—";
+        }}
+      />
+
+      <div className="grid grid-cols-2 gap-4 text-left mt-6">
+        <div className="bg-white p-4 rounded shadow">
+          <p className="text-sm text-slate-500">Estimated Monthly Savings</p>
+          <p
+            id="monthlySaving"
+            className="text-xl font-bold text-sky-500"
+          >
+            —
+          </p>
+        </div>
+
+        <div className="bg-white p-4 rounded shadow">
+          <p className="text-sm text-slate-500">Estimated Yearly Savings</p>
+          <p
+            id="yearlySaving"
+            className="text-xl font-bold text-sky-500"
+          >
+            —
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
       {/* PRODUCTS */}
       <section className="max-w-6xl mx-auto px-6 py-12">
         <h2 className="text-3xl font-bold text-center mb-10">

@@ -1,3 +1,5 @@
+import "./globals.css";
+
 export const metadata = {
   title: "Ramko Associates – Rooftop Solar",
   description: "Rooftop Solar EPC Company in Maharashtra"
@@ -6,10 +8,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body style={{ margin: 0, fontFamily: "Arial, sans-serif" }}>
+      <body className="bg-slate-50 text-slate-900">
         {children}
       </body>
     </html>
   );
 }
-

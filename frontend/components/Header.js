@@ -22,7 +22,10 @@ export default function Header() {
             target="_blank"
             className="bg-sky-500 text-white px-4 py-2 rounded-lg hover:bg-sky-600"
           >
-            Get Quote
+            <Link href="/contact" className="hover:text-sky-600">
+  Contact
+</Link>
+              Get Quote
           </a>
         </nav>
 

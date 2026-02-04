@@ -173,7 +173,50 @@ export default function Home() {
           </div>
         </div>
       </section>
+{/* INSTALLATION PROCESS */}
+<section className="bg-slate-100 py-16">
+  <div className="max-w-6xl mx-auto px-6">
+    <h2 className="text-3xl font-bold text-center mb-12">
+      Our Solar Installation Process
+    </h2>
 
+    <div className="grid md:grid-cols-4 gap-6 text-center">
+      <div className="bg-white p-6 rounded-xl shadow">
+        <div className="text-sky-500 text-2xl font-bold mb-2">1</div>
+        <h3 className="font-semibold mb-2">Free Consultation</h3>
+        <p className="text-sm text-slate-600">
+          Share your details and electricity bill
+        </p>
+      </div>
+
+      <div className="bg-white p-6 rounded-xl shadow">
+        <div className="text-sky-500 text-2xl font-bold mb-2">2</div>
+        <h3 className="font-semibold mb-2">Site Survey</h3>
+        <p className="text-sm text-slate-600">
+          Our experts assess your rooftop
+        </p>
+      </div>
+
+      <div className="bg-white p-6 rounded-xl shadow">
+        <div className="text-sky-500 text-2xl font-bold mb-2">3</div>
+        <h3 className="font-semibold mb-2">Installation</h3>
+        <p className="text-sm text-slate-600">
+          Professional installation & approvals
+        </p>
+      </div>
+
+      <div className="bg-white p-6 rounded-xl shadow">
+        <div className="text-sky-500 text-2xl font-bold mb-2">4</div>
+        <h3 className="font-semibold mb-2">Start Saving</h3>
+        <p className="text-sm text-slate-600">
+          Enjoy clean energy & lower bills
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
       {/* FOOTER */}
       <footer className="bg-slate-900 text-white text-center py-6">
         <p>© {new Date().getFullYear()} Ramko Associates</p>

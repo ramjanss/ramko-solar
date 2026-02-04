@@ -137,6 +137,23 @@ export default function Home() {
         </div>
       </section>
 
+{/* CONTACT CTA */}
+<section className="bg-sky-500 text-white py-14 text-center">
+  <h2 className="text-3xl font-bold mb-4">
+    Ready to Switch to Solar?
+  </h2>
+  <p className="mb-6">
+    Talk to our solar experts and get a free consultation
+  </p>
+  <a
+    href="/contact"
+    className="bg-white text-sky-600 px-8 py-3 rounded-lg font-semibold hover:bg-slate-100"
+  >
+    Contact Us
+  </a>
+</section>
+
+  
       {/* PRODUCTS */}
       <section className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-6">
         <a href="/3kw" className="bg-white p-6 rounded-xl shadow">

@@ -18,7 +18,7 @@ export default function Header() {
           <Link href="/3kw" className="hover:text-sky-600">3kW</Link>
           <Link href="/5kw" className="hover:text-sky-600">5kW</Link>
           <a
-            href="https://wa.me/91XXXXXXXXXX"
+            href="https://wa.me/917620209899"
             target="_blank"
             className="bg-sky-500 text-white px-4 py-2 rounded-lg hover:bg-sky-600"
           >

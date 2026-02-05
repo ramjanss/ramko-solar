@@ -166,14 +166,44 @@ export default function Home() {
         </a>
       </section>
 
-      {/* FOOTER */}
-      <footer className="bg-slate-900 text-white text-center py-8">
-        <p className="font-semibold">Ramko Associates</p>
-        <p>Rooftop Solar EPC Company – Maharashtra</p>
-        <p className="text-sm mt-2">
-          © {new Date().getFullYear()} All Rights Reserved
-        </p>
-      </footer>
+    {/* FOOTER */}
+<footer className="bg-slate-900 text-white py-10">
+  <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-6 text-sm">
+    
+    <div>
+      <p className="font-semibold text-lg mb-2">Ramko Associates</p>
+      <p>Rooftop Solar EPC Company</p>
+      <p>Maharashtra, India</p>
+    </div>
+
+    <div>
+      <p className="font-semibold mb-2">Quick Links</p>
+      <ul className="space-y-1">
+        <li><a href="/" className="hover:underline">Home</a></li>
+        <li><a href="/3kw" className="hover:underline">3kW Solar</a></li>
+        <li><a href="/5kw" className="hover:underline">5kW Solar</a></li>
+        <li><a href="/contact" className="hover:underline">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <p className="font-semibold mb-2">Get in Touch</p>
+      <a
+        href="https://wa.me/917620209899"
+        target="_blank"
+        className="inline-block bg-sky-500 text-white px-4 py-2 rounded-lg mt-2"
+      >
+        WhatsApp Us
+      </a>
+    </div>
+
+  </div>
+
+  <div className="text-center text-xs mt-8 opacity-70">
+    © {new Date().getFullYear()} Ramko Associates. All rights reserved.
+  </div>
+</footer>
+
 
     </main>
   );

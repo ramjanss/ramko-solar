@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 export default function FiveKW() {
   return (
     <main className="bg-slate-50">
